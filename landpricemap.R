@@ -47,7 +47,7 @@ custom_theme<-theme_void()+
 
 #make the map
 mp<-ggplot(data_cl) +
-  geom_sf(aes(fill = cl), color='white', linewidth=0.2) +
+  geom_sf(aes(fill = cl), color='dimgray', linewidth=0.2) +
   scale_fill_manual(values=pl,na.value=na_cl)+
   scale_color_manual(values=pl,na.value=na_cl)+
   guides(fill='none',color="none")+
@@ -74,7 +74,7 @@ lg<-ggplot()+
     data=tib%>%slice(c(seq(1,10,2))),
     mapping=aes(x=start,y=1.1,label=start),
     angle=45,hjust=0,vjust=0,
-    color='white'
+    color='#FFF4E5'
   )+
   annotate(
     geom="rect",
@@ -108,7 +108,7 @@ mp + lg +
   )&
   theme(
     plot.background = element_rect(fill="#202020",color=NA),
-    text = element_text('mono',hjust=0.5,color="white"),
+    text = element_text('mono',hjust=0.5,color="#FFF4E5"),
     plot.title = element_text(hjust=0.5,face='bold'),
     plot.subtitle = element_text(hjust=0.5)
   )
