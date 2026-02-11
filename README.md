@@ -9,8 +9,8 @@ This project analyzes and visualizes housing price data across different areas o
 ## Technologies Used
 
 - **R** - Data analysis and visualization
-- **ggplot2** - Data visualization (if you used it - adjust if different)
-- **sf/sp packages** - Geospatial data handling (adjust based on what you actually used)
+- **ggplot2** - Data visualization
+- **sf/sp packages** - Geospatial data handling 
 
 ## Key Features
 
